@@ -201,19 +201,19 @@ boolean seAcaboLaMelodia() {
 }
 
 void help() {
-	Serial.println("HELP: START STOP RESTART DEMO DEBUGOFF DEBUGON SPEEDUP SPEEDDOWN");
+	Serial.println("HELP: START STOP RESTART DEMO LOGOFF LOGON SPEEDUP SPEEDDOWN");
 }
 
 void start() {
 	demo = false;
 	initialize();
-	logger("--DEMO--");
+	logger("--START--");
 }
 
 void startDemo() {
 	demo = true;
 	initialize();
-	logger("--START--");
+	logger("--DEMO--");
 }
 
 struct Puntaje puntaje;
